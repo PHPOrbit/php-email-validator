@@ -16,7 +16,6 @@ jobs:
     strategy:
       matrix:
         php-versions: [7.4, 8.0, 8.1, 8.2, 8.3, 8.4]
-        composer-versions: [2]
 
     steps:
       - name: Checkout code
@@ -26,12 +25,13 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
-          extensions: mbstring, json, intl, pdo, pdo_mysql
-          coverage: none
+          extensions: mbstring, json, intl
           tools: composer
 
       - name: Install dependencies
-        run: composer install --no-progress --no-suggest --prefer-dist
+        run: composer install --no-progress --prefer-dist
 
       - name: Run Tests
         run: composer test
+        env:
+          XDEBUG_MODE: coverage
