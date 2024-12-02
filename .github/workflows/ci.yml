@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         php-versions: [7.4, 8.0, 8.1, 8.2, 8.3, 8.4]
 
@@ -26,7 +27,6 @@ jobs:
         with:
           php-version: ${{ matrix.php-versions }}
           extensions: mbstring, json, intl
-          tools: composer
 
       - name: Install dependencies
         run: composer install --no-progress --prefer-dist
