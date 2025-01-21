@@ -1,4 +1,4 @@
-# harungecit/php-email-validator
+# PHPOrbit/php-email-validator
 
 A PHP library for robust email validation. This package checks the email format, detects disposable email domains, and validates MX records to ensure the reliability of email addresses.
 
@@ -17,7 +17,7 @@ A PHP library for robust email validation. This package checks the email format,
 Install the package via Composer:
 
 ```bash
-composer require harungecit/php-email-validator
+composer require PHPOrbit/php-email-validator
 ```
 
 ---
@@ -42,8 +42,8 @@ For other PHP versions, please ensure your project meets the minimum requirement
 ### Basic Example
 
 ```php
-use HarunGecit\EmailValidator\EmailValidator;
-use HarunGecit\EmailValidator\Fetcher;
+use PHPOrbit\EmailValidator\EmailValidator;
+use PHPOrbit\EmailValidator\Fetcher;
 
 // Load blocklist and allowlist from the package
 $blocklist = Fetcher::loadBlocklist();
@@ -73,8 +73,8 @@ if (!$validator->isValidFormat($email)) {
 Integrate the validator into a user registration form:
 
 ```php
-use HarunGecit\EmailValidator\EmailValidator;
-use HarunGecit\EmailValidator\Fetcher;
+use PHPOrbit\EmailValidator\EmailValidator;
+use PHPOrbit\EmailValidator\Fetcher;
 
 $blocklist = Fetcher::loadBlocklist();
 $allowlist = Fetcher::loadAllowlist();
@@ -155,7 +155,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Author
 
-- **Harun Geçit**  
+- **Harun Geçit @ PHPOrbit**  
   [GitHub](https://github.com/harungecit) | [LinkedIn](https://linkedin.com/in/harungecit) | [Email](mailto:info@harungecit.com)
 
 ---
