@@ -1,5 +1,5 @@
 {
-    "name": "harungecit/php-email-validator",
+    "name": "phporbit/php-email-validator",
     "description": "PHP email validation library to check format, disposable emails, and MX records.",
     "type": "library",
     "require": {
@@ -8,12 +8,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "HarunGecit\\EmailValidator\\": "src/"
+            "PHPOrbit\\EmailValidator\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Harun Geçit",
+            "name": "Harun Geçit @ PHPOrbit",
             "email": "info@harungecit.com"
         }
     ],

@@ -3,8 +3,8 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use HarunGecit\EmailValidator\EmailValidator;
-use HarunGecit\EmailValidator\Fetcher;
+use PHPOrbit\EmailValidator\EmailValidator;
+use PHPOrbit\EmailValidator\Fetcher;
 
 class EmailValidatorTest extends TestCase
 {

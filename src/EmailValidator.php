@@ -1,6 +1,6 @@
 <?php
 
-namespace HarunGecit\EmailValidator;
+namespace PHPOrbit\EmailValidator;
 
 class EmailValidator
 {
