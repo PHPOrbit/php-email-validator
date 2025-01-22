@@ -2,6 +2,7 @@
     "name": "phporbit/php-email-validator",
     "description": "PHP email validation library to check format, disposable emails, and MX records.",
     "type": "library",
+    "version": "1.0.1",
     "require": {
         "php": ">=7.4"
     },
