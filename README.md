@@ -162,6 +162,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Changelog
 
+### v1.0.2
+- Updated blocklist and allowlist files.
+- Improved code quality and documentation.
+- Added more tests for edge cases.
+
 ### v1.0.0
 - Initial release with support for:
   - Email format validation
